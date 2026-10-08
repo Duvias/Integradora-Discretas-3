@@ -1,3 +1,38 @@
+# Professional profiles
+
+Canonical order rule: skills are filtered to the profile's symbols, without
+duplicates, ordered by category and, inside a category, by the order of the table.
+
+## Profile 1 — Full Stack Developer
+
+A Full Stack Developer builds both the user interface (frontend) and the
+server side (backend) of web applications, including data storage.
+
+| Order | Category | Canonical symbols | Rule |
+|---|---|---|---|
+| 1 | Language | JAVASCRIPT, TYPESCRIPT | at least one |
+| 2 | Frontend | REACT, ANGULAR, VUE | at least one |
+| 3 | Backend | NODE_JS, DJANGO, SPRING_BOOT | at least one |
+| 4 | Database | POSTGRESQL, MYSQL, MONGODB | at least one |
+| 5 | Version control | GIT | required |
+
+Example: JS, React.js, NodeJS, Postgres, Git → JAVASCRIPT, REACT, NODE_JS, POSTGRESQL, GIT
+
+## Profile 2 — Machine Learning Engineer
+
+A Machine Learning Engineer prepares data and builds, trains and stores
+predictive models.
+
+| Order | Category | Canonical symbols | Rule |
+|---|---|---|---|
+| 1 | Language | PYTHON | required |
+| 2 | Data processing | PANDAS, NUMPY | at least one |
+| 3 | ML framework | SCIKIT_LEARN, TENSORFLOW, PYTORCH | at least one |
+| 4 | Data storage | SQL, POSTGRESQL, MYSQL, MONGODB | at least one |
+| 5 | Version control | GIT | required |
+
+Example: Python, Pandas, TensorFlow, Postgres, Git → PYTHON, PANDAS, TENSORFLOW, POSTGRESQL, GIT
+
 ## Profile 3 — DevOps Engineer (software engineering)
 
 A DevOps Engineer automates how software is built, tested and deployed.
