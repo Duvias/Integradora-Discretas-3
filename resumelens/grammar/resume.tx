@@ -1,0 +1,20 @@
+Resume:
+    'candidate' name=STRING '{'
+        contact=Contact
+        experiences+=Experience
+    '}'
+;
+Contact:
+    'contact' '{'
+        'email' ':' email=Email
+        ('phone' ':' phone=Phone)?
+    '}'
+;
+Email: /[\w\.]+@[\w]+(\.[\w]+)+/;
+Phone: /\+?[0-9][0-9 \-]{6,14}[0-9]/;
+Experience:
+    'experience' '{'
+        'years' ':' years=INT
+        'description' ':' description=STRING
+    '}'
+;
