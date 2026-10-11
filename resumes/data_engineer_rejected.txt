@@ -1,0 +1,4 @@
+Name: Peter Parker
+peter.parker@dailybugle.com
+1 year of experience processing logs.
+Technical Skills: Python, SQL, Spark, Git.

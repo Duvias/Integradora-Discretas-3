@@ -1,0 +1,4 @@
+Name: Bruce Banner
+bruce.banner@culver.edu
+4 years of experience managing servers.
+Technical Skills: Bash, Docker, Azure, Git.
