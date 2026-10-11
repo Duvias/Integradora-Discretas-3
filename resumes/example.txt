@@ -1,0 +1,4 @@
+Name: Tony Stark
+tony.stark@starkindustries.com | +57 300 555 1234
+5 years of experience automating deployments and cloud infrastructure.
+Technical Skills: Git, AWS, Jenkins, Docker, Kubernetes, Python, Bash.
