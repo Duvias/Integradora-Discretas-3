@@ -1,9 +1,26 @@
-# Test case design — Stages 3 and 4
+# Test case design
 
-Automated tests: `tests/test_stage3_4.py` (run with `python -m pytest -q`).
-Example résumés for end-to-end scenarios: `resumes/`.
+Run all tests with: pyt -m pytest -q
 
-## Stage 3 — Finite automata
+## Stage 1 and 2 test cases
+
+| ID | Stage | Scenario | Input | Expected |
+|---|---|---|---|---|
+| T1-01 | Regex | Complete contact data | Mary Jane Watson résumé | email, phone, LinkedIn and GitHub found |
+| T1-02 | Regex | No contact data | "No contact data here." | all fields None |
+| T1-03 | Regex | Malformed email | "mary.watson@ please" | email None |
+| T1-04 | Regex | Two degrees | BSc Computer Science, Master in Data Science | both degrees |
+| T1-05 | Regex | Task example skills | JS, React.js, NodeJS, Postgres, Git | 5 strings in 4 categories |
+| T1-06 | Regex | Word boundaries | JavaScript, PostgreSQL, GitHub | no Java, no SQL, no Git |
+| T2-01 | FST | Known variants | JS, React.js, NodeJS, Postgres... | canonical symbol |
+| T2-02 | FST | Unknown word | Reac, Cobol, empty | no translation |
+| T2-03 | FST | Duplicates | JS and JavaScript | one JAVASCRIPT |
+| T2-04 | Sorting | Full Stack order | GIT POSTGRESQL NODE_JS REACT JAVASCRIPT PYTHON | JAVASCRIPT REACT NODE_JS POSTGRESQL GIT |
+| T2-05 | Sorting | ML order | GIT SQL TENSORFLOW PANDAS PYTHON REACT | PYTHON PANDAS TENSORFLOW SQL GIT |
+
+## Stages 3 and 4
+
+### Stage 3 — Finite automata
 
 | ID | Profile | Scenario | Input (sorted canonical sequence) | Expected |
 |---|---|---|---|---|
@@ -23,7 +40,7 @@ Example résumés for end-to-end scenarios: `resumes/`.
 | T3-14 | Data Engineer | Missing database | PYTHON SQL SPARK GIT | REJECTED |
 | T3-15 | Data Engineer | Missing processing | PYTHON SQL AIRFLOW MYSQL GIT | REJECTED |
 
-## Stage 4 — Candidate profile grammar (textX)
+### Stage 4 — Candidate profile grammar (textX)
 
 | ID | Scenario | Change applied to a valid profile | Expected |
 |---|---|---|---|
@@ -35,7 +52,7 @@ Example résumés for end-to-end scenarios: `resumes/`.
 | T4-06 | Years is not an integer (lexical) | `years: 5` → `years: five` | rejected |
 | T4-07 | Empty skills list (syntax) | `skills { ... }` → `skills { }` | rejected |
 
-## End-to-end scenarios (`python main.py`)
+### End-to-end scenarios (`python main.py`)
 
 | ID | Résumé | Expected result |
 |---|---|---|
