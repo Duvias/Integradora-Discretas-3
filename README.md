@@ -28,7 +28,7 @@ used in the résumé.
 
 ## Installation
 ```bash
-git clone <repo-url>
+git clone git clone https://github.com/Duvias/Integradora-Discretas-3.git
 cd Integradora-Discretas-3
 python -m venv .venv
 .venv\Scripts\activate
