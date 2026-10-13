@@ -1,0 +1,4 @@
+Name: Harry Osborn
+harry.osborn@oscorp.com
+2 years of experience analyzing sales data.
+Technical Skills: Python, Pandas, NumPy, MySQL, Git.

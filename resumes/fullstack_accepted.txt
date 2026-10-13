@@ -1,0 +1,5 @@
+Name: Wednesday Addams
+wednesday.addams@nevermore.edu | +57 300 123 4567 | github.com/wednesday
+3 years of experience developing web applications.
+Education: BSc Computer Science
+Technical Skills: JS, React.js, NodeJS, Postgres, Git.
