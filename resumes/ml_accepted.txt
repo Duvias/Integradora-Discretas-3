@@ -1,0 +1,5 @@
+Name: Mary Jane Watson
+mary.watson@dailybugle.com | +57 311 456 7890 | linkedin.com/in/mary-watson
+2 years of experience developing predictive models.
+Education: BSc Computer Science, Master in Data Science
+Technical Skills: Python, Pandas, NumPy, Scikit-learn, TensorFlow, SQL, Git.

@@ -1,0 +1,4 @@
+Name: Natasha Romanoff
+natasha.romanoff@shield.org | +57 311 222 3344
+3 years of experience building data pipelines.
+Technical Skills: Python, SQL, PySpark, Kafka, Airflow, Postgres, AWS, Git.

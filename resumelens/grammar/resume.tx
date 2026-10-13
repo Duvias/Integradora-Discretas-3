@@ -1,0 +1,43 @@
+Resume:
+    'candidate' name=STRING '{'
+        contact=Contact
+        experiences+=Experience
+        educations*=Education
+        skills=Skills
+        results=Results
+    '}'
+;
+Contact:
+    'contact' '{'
+        'email' ':' email=Email
+        ('phone' ':' phone=Phone)?
+    '}'
+;
+Email: /[\w\.]+@[\w]+(\.[\w]+)+/;
+Phone: /\+?[0-9][0-9 \-]{6,14}[0-9]/;
+Experience:
+    'experience' '{'
+        'years' ':' years=INT
+        'description' ':' description=STRING
+    '}'
+;
+Education:
+    'education' '{'
+        'degree' ':' degree=STRING
+    '}'
+;
+Skills:
+    'skills' '{' items+=Skill[','] '}'
+;
+Skill: /[A-Z][A-Z0-9_]*/;
+Results:
+    'results' '{' items+=ProfileResult '}'
+;
+ProfileResult:
+    'profile' profile=ProfileName ':' status=Status
+;
+ProfileName:
+    'FULL_STACK_DEVELOPER' | 'MACHINE_LEARNING_ENGINEER'
+  | 'DEVOPS_ENGINEER' | 'DATA_ENGINEER'
+;
+Status: 'ACCEPTED' | 'REJECTED';

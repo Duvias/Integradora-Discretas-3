@@ -1,0 +1,4 @@
+Name: Enid Sinclair
+enid.sinclair@nevermore.edu
+1 year of experience building landing pages.
+Technical Skills: JavaScript, React, MongoDB, Git.
